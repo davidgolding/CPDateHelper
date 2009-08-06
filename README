@@ -1,0 +1,35 @@
+CPDateHelper
+
+A Cappuccino / Objective-J helper class that extends the functionality of CPDate.
+
+This class provides date formatting methods similar to PHP's date() function.
+
+
+
+=== INSTALLATION ===
+
+- Place the CPDateHelper.j file in your Cappuccino application directory and include it in your app using @import "CPDateHelper.j"
+
+
+
+=== USAGE ===
+
+- Provide a datetime string that's compatible with the JavaScript Date() class.
+	ex. @"Wed Aug 5 2009 12:00:00"
+	
+- Provide a formatting parameter string.
+	ex. @"D M jS Y g:i A"
+
+- CPDateHelper returns a formatted CPString.
+
+
+=== EXAMPLE ===
+
+var date = [CPDateHelper date:@"Wed Aug 5 2009 13:00:00" withFormat:@"D M jS Y g:i A"];
+// returns Wed Aug 5th 2009 1:00 PM
+
+
+
+=== MORE INFO ===
+
+see PHP's date() function information page for a list of parameters and their return values at http://www.php.net/date
